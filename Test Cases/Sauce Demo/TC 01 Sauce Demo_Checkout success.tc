@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC 01 Login Success</name>
+   <name>TC 01 Sauce Demo_Checkout success</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>9b5b2a60-8182-4747-9b9f-761255f319d7</testCaseGuid>
+   <testCaseGuid>9318048f-9924-4be5-9606-25312c404414</testCaseGuid>
 </TestCaseEntity>

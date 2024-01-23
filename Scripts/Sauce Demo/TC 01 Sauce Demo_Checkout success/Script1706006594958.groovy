@@ -17,3 +17,35 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.openBrowser('')
+
+WebUI.maximizeWindow()
+
+WebUI.navigateToUrl('https://www.saucedemo.com/')
+
+WebUI.setText(findTestObject('SauceDemo/input_user-name'), 'standard_user')
+
+WebUI.setEncryptedText(findTestObject('SauceDemo/input_password'), 'qcu24s4901FyWDTwXGr6XA==')
+
+WebUI.click(findTestObject('SauceDemo/input_login-button'))
+
+WebUI.verifyEqual(WebUI.getUrl(), 'https://www.saucedemo.com/inventory.html')
+
+WebUI.click(findTestObject('SauceDemo/button_Add to cart'))
+
+WebUI.click(findTestObject('SauceDemo/Cart_logo'))
+
+WebUI.click(findTestObject('SauceDemo/button_Checkout'))
+
+WebUI.setText(findTestObject('SauceDemo/input_firstName'), 'tes')
+
+WebUI.setText(findTestObject('SauceDemo/input_lastName'), 'tes')
+
+WebUI.setText(findTestObject('SauceDemo/input_postalCode'), '123')
+
+WebUI.click(findTestObject('SauceDemo/continue'))
+
+WebUI.click(findTestObject('SauceDemo/button_Finish'))
+
+WebUI.verifyElementText(findTestObject('SauceDemo/h2_Thank you for your order'), 'Thank you for your order!')
+
